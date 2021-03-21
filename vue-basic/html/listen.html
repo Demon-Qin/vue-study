@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/listen.css">
+    <title>pug综合练习</title>
+  </head>
+  <body> 
+    <div id="app1">
+        <div class="circle" @mousemove="updatexy" >{{x}} {{y}}</div>
+      </div>  
+    <div id="app"> 
+      <div class="card" :style="{backgroundColor: backgroundcolor,color: color }" v-for="student in  students" :key="student.id">
+        <div class="header"> <img class="avatar" :src="student.avatar">
+          <h3>{{student.name}}</h3>
+        </div>
+        <p>{{student.hometown}}</p>
+        <p>{{student.birthday}}</p>
+        <p>{{student.hobby}}</p>
+        <p>{{student.signature}}</p><a :href="student.github"> github地址</a>
+      </div>
+      <button class="btn" @click="change">变化</button>
+      <button class="btn" @click="change1">变化1</button>
+
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script > 
+      let app1 = new Vue({
+        el: '#app1',
+        data: {
+            x: 0,
+            y: 0
+        },
+        methods: {
+            updatexy: function(event) {
+                this.x = event.offsetX;
+                this.y = event.offsetY;
+            }
+        }
+        })
+      const app=new Vue({
+          el: '#app',
+          data : {
+            message: 'app',  
+            backgroundcolor: "#6b91b6",
+            color: "#fff",
+            students: [{
+            "id": "2",
+            "name": "⾦晨星",
+            "github_name": "flobby949",
+            "nickname": "flobby",
+            "hometown": "江苏苏州",
+            "birthday": "2001.08.28",
+            "constellation": "处⼥座",
+            "mobile": "18962521753",
+            "qq": "2541226493",
+            "email": "2541226493@qq.com",
+            "avatar": "https://jinhuiqian.oss-cn-beijing.aliyuncs.com/avatar/08f33c7d8b09e9b440a40f03287f5fff.png",
+            "github": "https://github.com/Flobby949",
+            "hobby": "美⻝，游戏，影视，编程",
+            "signature": "不负热爱，远赴⼭海",
+            "color": "#7bafd4"
+            }, {
+            "id": "3",
+            "name": "杨煜帆",
+            "github_name": "goddiezz",
+            "nickname": "PotatoRice",
+            "hometown": "江苏泰州",
+            "birthday": "1999.08.20",
+            "constellation": "狮⼦座",
+            "mobile": "19822666656",
+            "qq": "1048706559",
+            "email": "1048706559@qq.com",
+            "avatar": "https://potato-rice.oss-cn-hangzhou.aliyuncs.com/img/1594093672430.png",
+            "github": "https://github.com/goddiezz",
+            "hobby": "思考..",
+            "signature": "仿⽣⼈也会涮电⼦⽺吗",
+            "color": "#FFDCDC"
+            }, {
+            "id": "4",
+            "name": "林丹丹",
+            "github_name": "dandan1232",
+            "nickname": "⼗⾥.",
+            "hometown": "江苏苏州",
+            "birthday": "2000.11.08",
+            "constellation": "天蝎座",
+            "mobile": "18962494510",
+            "qq": "345652127",
+            "email": "345652127@qq.com",
+            "avatar": "https://pic-ldd-test.oss-cn-hangzhou.aliyuncs.com/md/20210315130639.jpg",
+            "github": "https://github.com/dandan1232",
+            "hobby": "吃吃吃、⾳乐、徐正、编程",
+            "signature": "前途浩浩荡荡，万事皆可期待",
+            "color": "#42A5F5"
+            }]
+          },
+          methods: {
+          
+            change() {
+            this.color = "#333",
+            this.backgroundcolor = "#fcbad3"
+                },
+            change1() {
+            this.color = "#fff",
+            this.backgroundcolor = "#aa96da"
+                },      
+            },
+      })    
+    </script>
+  </body>
+</html>

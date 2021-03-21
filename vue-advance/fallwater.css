@@ -1,0 +1,590 @@
+@charset "UTF-8";
+.g-container {
+  column-count: 4;
+  column-gap: 0.5vw;
+  padding-top: 0.5vw;
+}
+
+auto为断开
+.g-item {
+  position: relative;
+  width: 24vw;
+  margin-bottom: 1vw;
+  break-inside: avoid;
+}
+
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(1) {
+  height: 191px;
+  background: #2f93c6;
+}
+
+要使⽤伪类和伪元素，必然⽗相⼦绝
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(1)::after {
+  content: "1";
+  position: absolute;
+  color: #fff;
+  font-size: 2vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(2) {
+  height: 112px;
+  background: #975805;
+}
+
+要使⽤伪类和伪元素，必然⽗相⼦绝
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(2)::after {
+  content: "2";
+  position: absolute;
+  color: #fff;
+  font-size: 2vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(3) {
+  height: 253px;
+  background: #89c7ce;
+}
+
+要使⽤伪类和伪元素，必然⽗相⼦绝
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(3)::after {
+  content: "3";
+  position: absolute;
+  color: #fff;
+  font-size: 2vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(4) {
+  height: 295px;
+  background: #041851;
+}
+
+要使⽤伪类和伪元素，必然⽗相⼦绝
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(4)::after {
+  content: "4";
+  position: absolute;
+  color: #fff;
+  font-size: 2vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(5) {
+  height: 314px;
+  background: #4b9c59;
+}
+
+要使⽤伪类和伪元素，必然⽗相⼦绝
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(5)::after {
+  content: "5";
+  position: absolute;
+  color: #fff;
+  font-size: 2vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(6) {
+  height: 300px;
+  background: #7a0187;
+}
+
+要使⽤伪类和伪元素，必然⽗相⼦绝
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(6)::after {
+  content: "6";
+  position: absolute;
+  color: #fff;
+  font-size: 2vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(7) {
+  height: 183px;
+  background: #5ac8b9;
+}
+
+要使⽤伪类和伪元素，必然⽗相⼦绝
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(7)::after {
+  content: "7";
+  position: absolute;
+  color: #fff;
+  font-size: 2vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(8) {
+  height: 155px;
+  background: #350f2e;
+}
+
+要使⽤伪类和伪元素，必然⽗相⼦绝
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(8)::after {
+  content: "8";
+  position: absolute;
+  color: #fff;
+  font-size: 2vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(9) {
+  height: 122px;
+  background: #ace841;
+}
+
+要使⽤伪类和伪元素，必然⽗相⼦绝
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(9)::after {
+  content: "9";
+  position: absolute;
+  color: #fff;
+  font-size: 2vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(10) {
+  height: 251px;
+  background: #c708c9;
+}
+
+要使⽤伪类和伪元素，必然⽗相⼦绝
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(10)::after {
+  content: "10";
+  position: absolute;
+  color: #fff;
+  font-size: 2vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(11) {
+  height: 179px;
+  background: #7d3e9c;
+}
+
+要使⽤伪类和伪元素，必然⽗相⼦绝
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(11)::after {
+  content: "11";
+  position: absolute;
+  color: #fff;
+  font-size: 2vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(12) {
+  height: 150px;
+  background: #3dd390;
+}
+
+要使⽤伪类和伪元素，必然⽗相⼦绝
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(12)::after {
+  content: "12";
+  position: absolute;
+  color: #fff;
+  font-size: 2vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(13) {
+  height: 242px;
+  background: #879e4a;
+}
+
+要使⽤伪类和伪元素，必然⽗相⼦绝
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(13)::after {
+  content: "13";
+  position: absolute;
+  color: #fff;
+  font-size: 2vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(14) {
+  height: 179px;
+  background: #d0fa80;
+}
+
+要使⽤伪类和伪元素，必然⽗相⼦绝
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(14)::after {
+  content: "14";
+  position: absolute;
+  color: #fff;
+  font-size: 2vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(15) {
+  height: 317px;
+  background: #eedf9c;
+}
+
+要使⽤伪类和伪元素，必然⽗相⼦绝
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(15)::after {
+  content: "15";
+  position: absolute;
+  color: #fff;
+  font-size: 2vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(16) {
+  height: 90px;
+  background: #0272ed;
+}
+
+要使⽤伪类和伪元素，必然⽗相⼦绝
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(16)::after {
+  content: "16";
+  position: absolute;
+  color: #fff;
+  font-size: 2vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(17) {
+  height: 310px;
+  background: #6d531e;
+}
+
+要使⽤伪类和伪元素，必然⽗相⼦绝
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(17)::after {
+  content: "17";
+  position: absolute;
+  color: #fff;
+  font-size: 2vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(18) {
+  height: 239px;
+  background: #9768d5;
+}
+
+要使⽤伪类和伪元素，必然⽗相⼦绝
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(18)::after {
+  content: "18";
+  position: absolute;
+  color: #fff;
+  font-size: 2vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(19) {
+  height: 234px;
+  background: #8eb163;
+}
+
+要使⽤伪类和伪元素，必然⽗相⼦绝
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(19)::after {
+  content: "19";
+  position: absolute;
+  color: #fff;
+  font-size: 2vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(20) {
+  height: 210px;
+  background: #023a7c;
+}
+
+要使⽤伪类和伪元素，必然⽗相⼦绝
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(20)::after {
+  content: "20";
+  position: absolute;
+  color: #fff;
+  font-size: 2vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(21) {
+  height: 137px;
+  background: #f570ee;
+}
+
+要使⽤伪类和伪元素，必然⽗相⼦绝
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(21)::after {
+  content: "21";
+  position: absolute;
+  color: #fff;
+  font-size: 2vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(22) {
+  height: 72px;
+  background: #92513d;
+}
+
+要使⽤伪类和伪元素，必然⽗相⼦绝
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(22)::after {
+  content: "22";
+  position: absolute;
+  color: #fff;
+  font-size: 2vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(23) {
+  height: 110px;
+  background: #a259e6;
+}
+
+要使⽤伪类和伪元素，必然⽗相⼦绝
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(23)::after {
+  content: "23";
+  position: absolute;
+  color: #fff;
+  font-size: 2vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(24) {
+  height: 247px;
+  background: #6fea23;
+}
+
+要使⽤伪类和伪元素，必然⽗相⼦绝
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(24)::after {
+  content: "24";
+  position: absolute;
+  color: #fff;
+  font-size: 2vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(25) {
+  height: 232px;
+  background: #4fcc72;
+}
+
+要使⽤伪类和伪元素，必然⽗相⼦绝
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(25)::after {
+  content: "25";
+  position: absolute;
+  color: #fff;
+  font-size: 2vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(26) {
+  height: 186px;
+  background: #e2652c;
+}
+
+要使⽤伪类和伪元素，必然⽗相⼦绝
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(26)::after {
+  content: "26";
+  position: absolute;
+  color: #fff;
+  font-size: 2vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(27) {
+  height: 262px;
+  background: #e60da5;
+}
+
+要使⽤伪类和伪元素，必然⽗相⼦绝
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(27)::after {
+  content: "27";
+  position: absolute;
+  color: #fff;
+  font-size: 2vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(28) {
+  height: 99px;
+  background: #1772a7;
+}
+
+要使⽤伪类和伪元素，必然⽗相⼦绝
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(28)::after {
+  content: "28";
+  position: absolute;
+  color: #fff;
+  font-size: 2vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(29) {
+  height: 61px;
+  background: #fea092;
+}
+
+要使⽤伪类和伪元素，必然⽗相⼦绝
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(29)::after {
+  content: "29";
+  position: absolute;
+  color: #fff;
+  font-size: 2vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(30) {
+  height: 230px;
+  background: #dab979;
+}
+
+要使⽤伪类和伪元素，必然⽗相⼦绝
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(30)::after {
+  content: "30";
+  position: absolute;
+  color: #fff;
+  font-size: 2vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(31) {
+  height: 249px;
+  background: #3e7769;
+}
+
+要使⽤伪类和伪元素，必然⽗相⼦绝
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(31)::after {
+  content: "31";
+  position: absolute;
+  color: #fff;
+  font-size: 2vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(32) {
+  height: 124px;
+  background: #0ca29d;
+}
+
+要使⽤伪类和伪元素，必然⽗相⼦绝
+围的⾼度，调⽤随机颜⾊函数作为背景⾊
+.g-item:nth-child(32)::after {
+  content: "32";
+  position: absolute;
+  color: #fff;
+  font-size: 2vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

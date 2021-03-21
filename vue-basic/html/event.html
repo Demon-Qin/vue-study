@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>事件练习</title>
+    <style>
+        /* .box{
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background-color: #2c615a;
+            color:#ccc;
+            margin-bottom: 10px;
+            margin-right: 10px ;
+        }
+        .info{
+            display :inline-block;
+            width:200px;
+            height:80px;
+        } */
+        * {
+            margin: 0 ;
+            padding: 0;
+            box-sizing:  border-box;
+        }
+        #app {
+            margin: 50px;
+
+        }
+        .btn {
+         width:100px;
+         height:35px;
+         font-size: 1.5em;
+         margin: 10px;
+
+        }
+        .parent{
+            width: 300px;
+            height: 300px;
+            padding: 50px;
+            background-color: rgb(57,106,126);
+        }
+        p{
+            box-sizing: content-box;
+            padding: 20px;
+            border: 10px solid ：#333;
+            width:200px;
+            height: 200px;
+            /* line-height: 200px; */
+            background-color: #7362b6;
+            /* font-size: 1.5em ; */
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="app" class="box">
+        <h2>点击了{{count}}</h2>
+        <button class="btn" v-on:click="count++">+</button>
+        <button class="btn" v-on:click="count--">+</button>
+        <hr/>
+        <button class="btn" v-on:click="incr(step,$event)">++</button>
+        <button class="btn" v-on:click="decr(step)">--</button>
+        <hr/>
+        <div >
+        <img src="https://via.placeholder.com/150" :width="width" :height="height"  class="img"  :data-xyz="message" 
+        @click="resp($event)" />
+    </div>
+        <!-- <h2>{{message}}</h2> -->
+        <!-- <p>hello</p> -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+      const app=new Vue({
+          el: '#app',
+          data : {
+            count: 0,
+            step:2,
+            width:200,
+            height: 200,
+            message:'hello world',
+          },
+          methods:{
+              incr(n,ev){
+                  this.count = this.count  + n
+                  console.log(ev)
+              },
+              decr(n,ev){
+                  this.count = this.count-n
+                 let el = ev.target
+                 el.style.broderRadius = '50%'
+                
+              },
+              resp(ev){
+                  alert('child')
+                // console.log(ev)
+                // console.log(ev.target.dataset.xyz)
+                // let el = ev.target
+                // el.style.width= '400px'
+                // el.style.height='400px'
+                // this.width=this.width*2
+                // this.height=this.height*2
+              }
+          },
+
+      })
+    </script>
+</body>
+</html>
