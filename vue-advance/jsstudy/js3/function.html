@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function3</title>
+</head>
+<body>
+    <div id="app">
+        <h2></h2>
+        <h3>url：{{url}}</h3>
+        <h3>hello：{{hello}}</h3>
+        <h3>大写之后：{{num}}</h3>
+        <input type="text" onkeyup="clearNoFloat(this)"> 
+        <input type="text" onkeyup="clearNoInt(this)"> 
+        <h3>isEmpty: {{isEmpty}}</h3>
+        <h3>getRond:6.123456,4 :     {{num1}}</h3>
+        <h3>cutGetRond:2.123456,4:    {{num2}}</h3>
+        <h3>"12314@qq.com" {{email}}</h3>
+        <h3>"12314!qq.com" {{email1}}</h3>
+        <h3>18851672790加米 {{phone}} </h3>
+        <h3>ye21st {{english1}}</h3>
+        <h3>sma!! {{english2}}</h3>
+        <h3>dasdas1132156 {{password}}</h3>
+        <h3>1132156 {{password1}}</h3>
+        <h3>转化{{number}}</h3>
+        <h3>浏览器 {{os}}</h3>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./function.js"></script>
+   
+    <script>
+        const app = new Vue({
+            el:'#app',
+            data: {
+                url:'',
+               hello: '',
+                num: '',
+                isEmpty: true,
+                num1:'',
+                num2: '',
+                email:'',
+                email1:'',
+                phone: '',
+                english1:'',
+                english2: '',
+                password:'',
+                password1:'',
+                number:'',
+                os: '',
+            },
+            created() {
+                this.url = getUrlParam("t1");
+                console.log(getUrlParam("t1")); // 1
+                this.hello = reverseStr("Hello!");
+                this.num = digitUppercase(1023456789.56);
+                this.isEmpty = checkIsEmpty("");
+                this.num1 = getRound(6.123456,4); // 6.1235
+                this.num2 = cutRoundNum(2.123456,4 );
+                this.email = isEmail("12314@qq.com")
+                this.email1 = isEmail("12314!qq.com");
+                this.phone = phoneToStar('18851672790');
+                console.log(checkLoginName("ye21st")) // true
+                console.log(checkLoginName("sam!")) // false
+                this.english1 = checkLoginName("ye21st")
+                this.english2 = checkLoginName("sam!")
+                this.password = checkPasswordValidate("dasdas1132156")
+                this.password1 = checkPasswordValidate("1132156")
+                this.number = numberToString(233, 2)
+                this.os = getOs();
+                console.log(BrowserInfo)
+                console.log(encodeFormData({ id: 1, name: 'hello' })) //id=1&name=hello
+            }
+        })
+    </script>
+</body>
+</html>
